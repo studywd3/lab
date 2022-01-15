@@ -11,17 +11,17 @@
 <h4>cUrl запросы</h4>
 
 <p>
-curl --location 'http://localhost:8090/cards' \
+curl --location 'https://warm-thicket-02379.herokuapp.com/cards' \
 --header 'Content-Type: application/json'
 </p>
 
 <p>
-curl --location 'http://localhost:8090/types' \
+curl --location 'https://warm-thicket-02379.herokuapp.com/types' \
 --header 'Content-Type: application/json'
 </p>
 
 <p>
-curl --location --request POST 'http://localhost:8090/clients' \
+curl --location --request POST 'https://warm-thicket-02379.herokuapp.com/clients' \
 --header 'Content-Type: application/json' \
 --data-raw '{
 "fio": "Иван Иванов",
@@ -31,12 +31,12 @@ curl --location --request POST 'http://localhost:8090/clients' \
 </p>
 
 <p>
-curl --location 'http://localhost:8090/clients/1' \
+curl --location 'https://warm-thicket-02379.herokuapp.com/clients/1' \
 --header 'Content-Type: application/json'
 </p>
 
 <p>
-curl --location --request POST 'http://localhost:8090/clients' \
+curl --location --request POST 'https://warm-thicket-02379.herokuapp.com/clients' \
 --header 'Content-Type: application/json' \
 --data-raw '{
 "fio": "Иван Петров",
@@ -46,15 +46,15 @@ curl --location --request POST 'http://localhost:8090/clients' \
 </p>
 
 <p>
-curl --location 'http://localhost:8090/clients/2' \
+curl --location 'https://warm-thicket-02379.herokuapp.com/clients/2' \
 --header 'Content-Type: application/json'
 </p>
 
 <p>
-curl --location --request DELETE 'http://localhost:8090/clients/2' \
+curl --location --request DELETE 'https://warm-thicket-02379.herokuapp.com/clients/2' \
 --data-raw ''
 </p>
 
 <p>
-curl --location 'http://localhost:8090/hostname'
+curl --location 'https://warm-thicket-02379.herokuapp.com/hostname'
 </p>
